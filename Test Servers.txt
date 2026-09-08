@@ -1,0 +1,4 @@
+﻿## Azure
+mkdir azurite-data -Force; docker run -d --name azurite-blobs -p 10000:10000 -v "${PWD}\.docker\azurite-data:/data" mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost 0.0.0.0 --blobPort 10000 --location /data --debug /data/debug.log
+
+var service = new BlobServiceClient("UseDevelopmentStorage=true");

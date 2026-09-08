@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12120.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeQ.FileStorage.AzureBlob", "BeeQ.FileStorage.AzureBlob.csproj", "{1701ED23-BFD1-48BF-AA56-D975D0DD13D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1701ED23-BFD1-48BF-AA56-D975D0DD13D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1701ED23-BFD1-48BF-AA56-D975D0DD13D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1701ED23-BFD1-48BF-AA56-D975D0DD13D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1701ED23-BFD1-48BF-AA56-D975D0DD13D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19168B74-6F90-4368-B2F6-B798D78D48FD}
+	EndGlobalSection
+EndGlobal

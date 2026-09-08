@@ -1,0 +1,24 @@
+﻿using Azure.Storage.Blobs.Models;
+using BeeQ.FileStorage.Service;
+
+namespace BeeQ.FileStorage.AzureBlob;
+
+public interface IAzureBlobService : IAzureBlobService<Guid> { }
+
+public interface IAzureBlobService<TId> : IFileStorage<TId>
+{
+    Task<BlobItem[]> GetFiles(string prefix, string? containerName = null);
+
+    Task<string?> GetTemporalyUrl(TId id, TimeSpan duracion, string? containerName = null);
+
+    Task<BlobProperties?> GetFileMetadata(TId id, string? containerName = null);
+
+    Task CopyFile(string sourceBlobName, string destinationBlobName);
+    Task CopyFile(string? sourceContainer, string sourceBlobName, string? destinationContainer, string destinationBlobName);
+
+    Task MoveFile(string sourceBlobName, string destinationBlobName);
+    Task MoveFile(string? sourceContainer, string sourceBlobName, string? destinationContainer, string destinationBlobName);
+
+    Task SetFileTags(TId id, IDictionary<string, string> tags);
+    Task<IDictionary<string, string>> GetFileTags(TId id);
+}
